@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan Fresh</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body class="bg-green-50">
+    <nav class="bg-green-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="{% url 'home' %}" class="text-black text-2xl font-bold">Vegan Fresh</a>
+            <div>
+                <a href="{% url 'home' %}" class="text-black mx-2">Home</a>
+                <a href="{% url 'tips' %}" class="text-black mx-2">Tips</a>
+                <a href="{% url 'products' %}" class="text-black mx-2">Products</a>
+                <a href="{% url 'contact' %}" class="text-black mx-2">Contact</a>
+                <a href="{% url 'about' %}" class="text-black mx-2">About us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto mt-8">
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

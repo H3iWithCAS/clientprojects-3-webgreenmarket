@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="bg-white text-black rounded-lg shadow-md p-8">
+    <h1 class="text-4xl font-bold mb-4">Welcome to Vegan Fresh</h1>
+    <p class="text-xl mb-4">"Green Market adalah pasar modern yang menyediakan produk segar dan organik dari petani lokal. Kami menghadirkan pilihan sayuran, buah-buahan."</p>
+    <p class="text-xl mb-8">"bahan makanan sehat untuk mendukung gaya hidup ramah lingkungan. Belanja di Green Market berarti mendukung keberlanjutan, kualitas, dan kesegaran dalam setiap produk."</p>
+    <a href="{% url 'products' %}" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Lihat Products</a>
+</div>
+{% endblock %}
+
